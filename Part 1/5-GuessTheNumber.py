@@ -106,3 +106,16 @@ def demanderNombre(secret, compteurEssais):
         return demanderNombre(secret, compteurEssais)
     return compteurEssais
 """
+
+# Recap----------------------------------------------------------------------------------------------------
+"""
+Jusqu'ici, on a vu:
+-créer une fonction
+-arguments
+-retourner une valeur
+-if/else/elif
+-print()
+-input()
+-for i in range(): / for e in list:
+-while [condition]:
+"""

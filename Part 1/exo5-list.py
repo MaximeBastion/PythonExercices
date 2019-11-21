@@ -85,3 +85,75 @@ On affect 2 à x, et 5 à y, en une seule ligne.
 def intervertir3(liste):
     liste[0], liste[1] = liste[1], liste[0]
 """
+
+# 4----------------------------------------------------------------------------------------------------
+"""
+4. Créer une fonction qui prend en argument une liste d'entiers et un entier. 
+Cette fonction renvoie deux listes, la première composée de tous les éléments
+ inférieurs ou égaux à l'entier en argument, et la seconde le reste.
+"""
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+#Solution
+"""
+def seperate(l, n):
+    l1 = []
+    l2 = []
+    for e in l:
+        if e <= n:
+            l1.append(e)
+        else:
+            l2.append(e)
+    return l1, l2
+
+def seperate2(l, n):
+    return [e for e in l if e <= n], [e for e in l if e > n]
+"""
+
+# 4----------------------------------------------------------------------------------------------------
+"""
+A FAIRE APRES JEU DES ALLUMMETTES
+-- Listes à 2 dimensions.
+Jusqu'ici nous avons travaillé avec des listes à 1 dimension.
+Une liste à 2 dimensions est une ligne dont les cellules contiennent elles-mêmes des listes.
+l2d = [1, 2, [3, 4, 5], 6]
+Ici, la cellule d'index 2 comporte une autre liste : [3, 4, 5].
+Pour accéder aux cellules de cette liste, 
+on renseigne d'abord l'index de la cellule contenant la sous-liste,
+puis on renseigne l'index de la cellule intérieure.
+Par exemple, si on veut atteindre la valeur 3:
+l2d[2][0] -> On cherche dans la cellule d'index 2, puis dans la liste qu'on y trouve,
+on cherche dans la première case.
+4. Créer une fonction qui accède à la sous liste dans l2d pour y renvoyer le 4.
+
+Une liste a deux dimensions peut représenté un tableau ou matrice.
+Par exemple:
+[0, 1, 2
+"""
+l2d = [1, 2, [3, 4, 5], 6]
+
+
+
+#Solution
+"""
+def get4(l):
+    return l[2][1]
+"""
+
+# 5----------------------------------------------------------------------------------------------------
+"""
+Un tableau ou une matrice peux être représentée via une liste à deux dimensions.
+Voici une matrice 3x3.
+
+matrice = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+< = >
+[0, 0, 0]
+[0, 0, 0]
+[0, 0, 0]
+
+
+"""
+
+
